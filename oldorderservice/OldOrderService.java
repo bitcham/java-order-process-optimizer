@@ -37,7 +37,7 @@ public class OldOrderService {
         public InventoryWork(String orderNo) {
             this.orderNo = orderNo;
         }
-
+        @Override
         public Boolean call() {
             log("Inventory update: " + orderNo);
             sleep(1000);
@@ -50,6 +50,7 @@ public class OldOrderService {
         public ShippingWork(String orderNo) {
             this.orderNo = orderNo;
         }
+        @Override
         public Boolean call() {
             log("Shipping system notification: " + orderNo);
             sleep(1000);
@@ -62,6 +63,7 @@ public class OldOrderService {
         public AccountingWork(String orderNo) {
             this.orderNo = orderNo;
         }
+        @Override
         public Boolean call() {
             log("Accounting system update: " + orderNo);
             sleep(1000);
