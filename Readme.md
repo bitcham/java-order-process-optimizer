@@ -124,7 +124,7 @@ static class AccountingWork implements Callable<Boolean> {
 ```java
 public static void main(String[] args) throws ExecutionException, InterruptedException {
     String orderNo = "Order#1234";
-    OldOrderService orderService = new OldOrderService();
+    NewOrderService orderService = new NewOrderService();
     orderService.order(orderNo);
 }
 ```
